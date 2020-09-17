@@ -14,17 +14,13 @@ const (
 func Test8(t *testing.T) {
 	b := Bits8(0)
 
-	b.Set(BitA)
-	b.Set(BitB)
-	b.Set(BitC)
-	b.Set(BitD)
+	b.Set(BitA).Set(BitB).Set(BitC).Set(BitD)
 
 	if b != Bits8(15) {
 		t.Error(`expected 15, given `, b)
 	}
 
-	b.Unset(BitA)
-	b.Unset(BitC)
+	b.Unset(BitA).Unset(BitC)
 
 	if b != Bits8(10) {
 		t.Error(`expected 10, given `, b)
@@ -52,17 +48,13 @@ func Test8(t *testing.T) {
 func Test16(t *testing.T) {
 	b := Bits16(0)
 
-	b.Set(BitA)
-	b.Set(BitB)
-	b.Set(BitC)
-	b.Set(BitD)
+	b.Set(BitA).Set(BitB).Set(BitC).Set(BitD)
 
 	if b != Bits16(15) {
 		t.Error(`expected 15, given `, b)
 	}
 
-	b.Unset(BitA)
-	b.Unset(BitC)
+	b.Unset(BitA).Unset(BitC)
 
 	if b != Bits16(10) {
 		t.Error(`expected 10, given `, b)
@@ -90,17 +82,13 @@ func Test16(t *testing.T) {
 func Test32(t *testing.T) {
 	b := Bits32(0)
 
-	b.Set(BitA)
-	b.Set(BitB)
-	b.Set(BitC)
-	b.Set(BitD)
+	b.Set(BitA).Set(BitB).Set(BitC).Set(BitD)
 
 	if b != Bits32(15) {
 		t.Error(`expected 15, given `, b)
 	}
 
-	b.Unset(BitA)
-	b.Unset(BitC)
+	b.Unset(BitA).Unset(BitC)
 
 	if b != Bits32(10) {
 		t.Error(`expected 10, given `, b)
@@ -128,17 +116,13 @@ func Test32(t *testing.T) {
 func Test64(t *testing.T) {
 	b := Bits64(0)
 
-	b.Set(BitA)
-	b.Set(BitB)
-	b.Set(BitC)
-	b.Set(BitD)
+	b.Set(BitA).Set(BitB).Set(BitC).Set(BitD)
 
 	if b != Bits64(15) {
 		t.Error(`expected 15, given `, b)
 	}
 
-	b.Unset(BitA)
-	b.Unset(BitC)
+	b.Unset(BitA).Unset(BitC)
 
 	if b != Bits64(10) {
 		t.Error(`expected 10, given `, b)
